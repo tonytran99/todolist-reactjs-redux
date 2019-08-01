@@ -26,7 +26,6 @@ class TaskForm extends Component {
     }
 
     componentWillReceiveProps(nextProps) {
-        console.log(nextProps);
         if (nextProps && nextProps.itemEditing) {
             this.setState({
                 id: nextProps.itemEditing.id,
@@ -76,7 +75,6 @@ class TaskForm extends Component {
 
     render() {
         var { id } = this.state; 
-        console.log(id);
         if (this.props.isDisplayForm === false) return null;
         return (
         <div className="panel panel-warning">

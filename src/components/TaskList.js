@@ -31,8 +31,6 @@ class TaskList extends Component {
 
     render() {
         var { tasks, filterTable,keyword,sort } = this.props;
-        console.log(keyword);
-
         // filterTable
         if (filterTable) {
             if (filterTable.name) {

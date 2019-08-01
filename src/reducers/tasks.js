@@ -47,10 +47,6 @@ var myReducer = (state = initialState, action) => {
         case types.UPDATE_STATUS:
             id = action.id;
             index = findIndex(state, id);
-            //state[index].status = !state[index].status;
-            // var cloneTask = { ...state[index] };
-            // cloneTask.status = !cloneTask.status;
-            // state[index] = cloneTask;
             state[index] = {
                 ...state[index],
                 status : !state[index].status
